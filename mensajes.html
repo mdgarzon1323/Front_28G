@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesMensajes.js"></script>
+    </head>
+    <body>
+        <h1>Mensajes</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categoria.html">Categoria</a></li>
+            <li><a href="room.html">Room</a></li>
+            <li><a href="cliente.html">Clientes</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+
+        <script type="text/javascript">
+            window.onload = getRoom_Message();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = getClient_Message();
+        </script>
+
+       
+
+        <script type="text/javascript">
+            window.onload = getMensajes();
+        </script>
+
+        
+        <div>
+            <input type="text" id="messageText" placeholder="mensaje">
+
+            <select id="select-room"></select>
+
+            <select id="select-client"></select>
+            
+            <button onclick="postMensajes()">
+                Enviar Mensaje
+            </button>
+            <div id="resultado1"></div>
+
+        </div>
+    </body>
+
+</html>
